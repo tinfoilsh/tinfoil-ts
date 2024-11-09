@@ -1,0 +1,25 @@
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist",
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "target": "ES2022",
+        "lib": [
+            "dom",
+            "es2020"
+        ],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "preserveConstEnums": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true, // Ensure this is included
+        "declaration": true,
+        "declarationMap": true
+    },
+    "include": [
+        "src"
+    ]
+}

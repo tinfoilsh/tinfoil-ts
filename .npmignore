@@ -1,0 +1,33 @@
+# Source
+src/
+tests/
+e2e/
+
+# Config files
+.github/
+.gitignore
+.eslintrc
+playwright.config.ts
+tsconfig.json
+vite.config.ts
+eslint.config.js
+
+# Tests
+coverage/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Development
+node_modules/
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment
+.env
