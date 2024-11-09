@@ -29,7 +29,7 @@ test.describe('Tinfoil Analytics', () => {
 
     test('handles configuration fetch failure', async ({ page }) => {
         // Mock failed configuration fetch
-        await page.route('**/accounts/*/analytics:config', route => {
+        await page.route('**/domains/*/config', route => {
             route.abort();
         });
 
@@ -55,7 +55,7 @@ test.describe('Tinfoil Analytics', () => {
 
     test('does not track events multiple times due to caching', async ({ page }) => {
         // Mock configuration with 'visit' event
-        await page.route('**/accounts/*/analytics:config', route => {
+        await page.route('**/domains/*/config', route => {
             route.fulfill({
                 status: 200,
                 contentType: 'application/json',

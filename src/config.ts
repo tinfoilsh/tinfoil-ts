@@ -119,7 +119,7 @@ export async function getConfig(
     endpoint: string = DEFAULT_CONFIG_ENDPOINT
 ): Promise<GlobalConfig | null> {
     try {
-        const url = new URL(`accounts/${domain}/analytics:config`, endpoint);
+        const url = new URL(`domains/${domain}/config`, endpoint);
         logger.log(`Fetching global config from URL: ${url}`);
         const response = await fetch(url.toString());
 
