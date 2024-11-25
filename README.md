@@ -36,22 +36,17 @@ npm run test:e2e
 
 ## Publishing
 
-1. Bump the version in `package.json`:
+First, update the version in package.json.
 
-```json
-"version": "0.0.XX"
-```
-
-2. Build the package:
+Then, commit the version change and create and push a new tag:
 
 ```bash
-npm run build
+git add package.json
+git commit -m "Release vX.Y.Z"
+git tag vX.Y.Z # where X.Y.Z matches the version in package.json
+git push origin main --tags
 ```
 
-3. Publish the package:
+This will trigger the GitHub Actions workflow to automatically build and publish the package to `npm`.
 
-```bash
-npm publish
-```
-
-4. Go to the [jsdelivr repo](https://github.com/tinfoilanalytics/jsdelivr) and follow the README there to update the hosted version at js.tinfoil.sh.
+Finally, go to the [jsdelivr repo](https://github.com/tinfoilanalytics/jsdelivr) and follow the README there to update the hosted version at js.tinfoil.sh.

@@ -1,17 +1,16 @@
 {
-    "extends": "@tsconfig/node20/tsconfig.json",
     "compilerOptions": {
         "rootDir": "src",
         "outDir": "dist",
         "resolveJsonModule": true,
         "sourceMap": true,
-        "target": "ES2022",
+        "target": "esnext",
         "lib": [
             "dom",
-            "es2020"
+            "esnext"
         ],
         "module": "esnext",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "strict": true,
         "preserveConstEnums": true,
         "esModuleInterop": true,
