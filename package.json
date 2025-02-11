@@ -45,6 +45,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tinfoilanalytics/tinfoil-ts.git"
+        "url": "git+https://github.com/tinfoilsh/tinfoil-ts.git"
     }
 }

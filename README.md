@@ -49,4 +49,4 @@ git push origin main --tags
 
 This will trigger the GitHub Actions workflow to automatically build and publish the package to `npm`.
 
-Finally, go to the [jsdelivr repo](https://github.com/tinfoilanalytics/jsdelivr) and follow the README there to update the hosted version at js.tinfoil.sh.
+Finally, go to the [jsdelivr repo](https://github.com/tinfoilsh/jsdelivr) and follow the README there to update the hosted version at js.tinfoil.sh.
